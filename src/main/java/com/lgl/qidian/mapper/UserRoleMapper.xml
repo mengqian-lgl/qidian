@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lgl.qidian.mapper.UserRoleMapper">
+    <insert id="insertUserRole" parameterType="com.lgl.qidian.entity.web_security.User_Role">
+        insert into user_role(role_id, user_id) values(
+            #{role_id},
+            #{user_id}
+        )
+    </insert>
+
+    <select id="selectRoleByUserId" resultType="com.lgl.qidian.entity.web_security.User_Role" parameterType="java.lang.Long">
+        select user_id, role_id from user_role where user_id = #{userId}
+    </select>
+</mapper>
