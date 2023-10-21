@@ -37,9 +37,9 @@ public class TestNoFollowSpring {
     public void testthking(){
         User user = new User();
         System.out.println(user);
-        user.grantedAuthorities.add(new SimpleGrantedAuthority("user"));
-        user.grantedAuthorities.add(new SimpleGrantedAuthority("admin"));
-        System.out.println(JSON.toJSON(user));
+//        user.grantedAuthorities.add(new SimpleGrantedAuthority("user"));
+//        user.grantedAuthorities.add(new SimpleGrantedAuthority("admin"));
+//        System.out.println(JSON.toJSON(user));
         JSONObject o = (JSONObject) JSON.toJSON(user);
         User t = JSON.toJavaObject(o, User.class);
         System.out.println(t);

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lgl.qidian.mapper.AdjudicationWriterMapper">
+    <insert id="insertAdjudicationWriter" parameterType="com.lgl.qidian.entity.tobe_writer_contoller.AdjudicationWriterDo">
+        insert into adjudication_writer(user_id, is_ack) values(
+            #{userId}, #{isAck}
+        );
+    </insert>
+
+    <delete id="deleteByUserId" parameterType="java.lang.Long">
+        delete from adjudication_writer where user_id = #{userId}
+    </delete>
+
+    <update id="update" parameterType="com.lgl.qidian.entity.tobe_writer_contoller.AdjudicationWriterDo">
+        update adjudication
+        <set>
+            <if test="adminId != null">
+                admin_id = #{adminId} ,
+            </if>
+            <if test="isAck != null and isAck != '' and isAck = 'true' or isAck = 'false">
+                is_ack = #{isAck}
+            </if>
+        </set>
+        <where>
+            <if test="userId != null">
+                user_id = #{userId}
+            </if>
+        </where>
+    </update>
+</mapper>

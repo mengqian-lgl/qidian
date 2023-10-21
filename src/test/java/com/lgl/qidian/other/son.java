@@ -7,4 +7,8 @@ import com.lgl.qidian.other.father;
  */
 public class son extends father {
     String name;
+
+    protected void test(){
+        System.out.println("ceshi");
+    }
 }

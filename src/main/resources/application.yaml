@@ -8,14 +8,15 @@ spring:
     username: root
     password: 123456
   redis:
-    host: 127.0.0.1
+    host: 192.168.91.133
+    password: 4399wansm.www
     lettuce:
       pool:
         max-active: 8
         max-wait: 10
         min-idle: 1
         max-idle: 8
-    port: 6379
+    port: 7000
   rabbitmq:
     virtual-host: /lgl
     username: lgl
@@ -30,6 +31,9 @@ db:
     one-table-num: "20000"
 
 jwt.secret: "123456"
+logging:
+  config: classpath:logback.xml
+
 
 
 

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 日志级别从低到高分为TRACE < DEBUG < INFO < WARN < ERROR < FATAL，如果设置为WARN，则低于WARN的信息都不会输出 -->
+<!-- scan:当此属性设置为true时，配置文件如果发生改变，将会被重新加载，默认值为true -->
+<!-- scanPeriod:设置监测配置文件是否有修改的时间间隔，如果没有给出时间单位，默认单位是毫秒。当scan为true时，此属性生效。默认的时间间隔为1分钟。 -->
+<!-- debug:当此属性设置为true时，将打印出logback内部日志信息，实时查看logback运行状态。默认值为false。 -->
+<!--        scanPeriod="10 seconds"-->
+<configuration  scan="true"
+                xmlns="http://ch.qos.logback/xml/ns/logback"
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xsi:schemaLocation="http://ch.qos.logback/xml/ns/logback https://raw.githubusercontent.com/enricopulatzo/logback-XSD/master/src/main/xsd/logback.xsd"
+>
+<!--    <appender name="test" class="ch.qos.logback.core.ConsoleAppender">-->
+<!--        <encoder>-->
+<!--            <pattern>%-20date{yyyy年 MM月 HH:mm:ss} %logger %msg %line %class %contextName %n</pattern>-->
+<!--            <charset>UTF-8</charset>-->
+<!--        </encoder>-->
+<!--&lt;!&ndash;        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">&ndash;&gt;-->
+<!--&lt;!&ndash;            <level>info</level>&ndash;&gt;-->
+<!--&lt;!&ndash;        </filter>&ndash;&gt;-->
+<!--&lt;!&ndash;        <filter class="ch.qos.logback.classic.filter.LevelFilter">&ndash;&gt;-->
+<!--&lt;!&ndash;            <level>ERROR</level>&ndash;&gt;-->
+<!--&lt;!&ndash;            <onMatch>ACCEPT</onMatch>&ndash;&gt;-->
+<!--&lt;!&ndash;            <onMismatch>DENY</onMismatch>&ndash;&gt;-->
+<!--&lt;!&ndash;        </filter>&ndash;&gt;-->
+<!--    </appender>-->
+
+<!--    <appender name="fileAppender" class="ch.qos.logback.core.FileAppender">-->
+<!--        <file>mylog.log</file>-->
+<!--        <encoder>-->
+<!--            <charset>utf-8</charset>-->
+<!--            <pattern>%date{yyyy-MM-dd HH:mm:ss} %msg %n</pattern>-->
+<!--        </encoder>-->
+<!--        <append>true</append>-->
+<!--    </appender>-->
+
+<!--    <appender name="rollAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">-->
+<!--        <file>rollAppender.log</file>-->
+<!--        <encoder>-->
+<!--            <pattern>%date %msg</pattern>-->
+<!--            <charset>UTF-8</charset>-->
+<!--        </encoder>-->
+<!--        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">-->
+<!--            <fileNamePattern>log_%d{yyyy/MM-dd HH-mm}.%i.log</fileNamePattern>-->
+<!--            <maxHistory>10</maxHistory>-->
+<!--            <maxFileSize>1KB</maxFileSize>-->
+<!--        </rollingPolicy>-->
+
+<!--    </appender>-->
+    <property name="CONSOLE_LOG_PATTERN"
+              value="%red(%date{yyyy-MM-dd HH:mm:ss}) %highlight(%-5level) %red([%thread]) %boldMagenta(%logger{50}) %cyan(%msg%n)"/>
+    <property name="FILE_LOG" value="%d{yyyy-MM-dd HH:mm:ss} %-5level %thread %logger{50} %msg %n"/>
+
+    <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <charset>utf-8</charset>
+            <pattern>${CONSOLE_LOG_PATTERN}</pattern>
+<!--  <pattern>%d{yyyy-MM-dd HH:mm:ss} 日志级别:%level 线程:%thread 消息:%msg 位置:%caller{1} </pattern>-->
+        </encoder>
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>debug</level>
+        </filter>
+    </appender>
+
+    <appender name="info" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>info.log</file>
+        <encoder>
+            <pattern>${FILE_LOG}</pattern>
+            <charset>utf-8</charset>
+        </encoder>
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <fileNamePattern>info_%d{yyyy-MM/dd}.%i.log</fileNamePattern>
+            <maxHistory>15</maxHistory>
+            <maxFileSize>100MB</maxFileSize>
+        </rollingPolicy>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>info</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+        <append>false</append>
+    </appender>
+
+    <appender name="warn" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>warn.log</file>
+        <encoder>
+            <charset>utf-8</charset>
+            <pattern>${FILE_LOG}</pattern>
+        </encoder>
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <fileNamePattern>warn_%d{yyyy-MM/dd}.%i.log</fileNamePattern>
+            <maxHistory>15</maxHistory>
+            <maxFileSize>100MB</maxFileSize>
+        </rollingPolicy>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>warn</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+        <append>false</append>
+    </appender>
+
+    <appender name="error" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>error.log</file>
+        <encoder>
+            <charset>utf-8</charset>
+            <pattern>${FILE_LOG}</pattern>
+        </encoder>
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <fileNamePattern>error_%d{yyyy-MM/dd}.%i.log</fileNamePattern>
+            <maxHistory>15</maxHistory>
+            <maxFileSize>100MB</maxFileSize>
+        </rollingPolicy>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>error</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+        <append>false</append>
+    </appender>
+<!--    debug info ware error failte-->
+    <root level="info">
+        <appender-ref ref="console"/>
+        <appender-ref ref="info"/>
+        <appender-ref ref="warn"/>
+        <appender-ref ref="error"/>
+    </root>
+<!--    <logger name="com.lgl.qidian" additivity="false">-->
+<!--        <appender-ref ref="console"/>-->
+<!--        <appender-ref ref="info"/>-->
+<!--        <appender-ref ref="warn"/>-->
+<!--        <appender-ref ref="error"/>-->
+<!--    </logger>-->
+
+</configuration>

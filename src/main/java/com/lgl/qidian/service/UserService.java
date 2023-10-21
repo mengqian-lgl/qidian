@@ -27,6 +27,7 @@ import java.io.IOException;
 @Service
 public class UserService {
 
+
     @Autowired
     StringRedisTemplate stringRedisTemplate;
 
@@ -41,8 +42,10 @@ public class UserService {
             response.setContentType("application/json");
             ServletOutputStream outputStream = response.getOutputStream();
             outputStream.write("登入失败，密码或账号错误".getBytes());
+
             outputStream.flush();
             outputStream.close();
+            return;
         }
         System.out.println(authenticate);
         //登入成功，获得雪花id为key，将用户信息存入redis。 JSSEION为雪花id

@@ -1,6 +1,7 @@
 package com.lgl.qidian.mapper;
 
 import com.lgl.qidian.controller.ToBeWriterController;
+import com.lgl.qidian.entity.UserDetailsDo;
 import com.lgl.qidian.entity.tobe_writer_contoller.ToBeWriterBody;
 import org.apache.ibatis.annotations.Mapper;
 
@@ -10,4 +11,6 @@ import org.apache.ibatis.annotations.Mapper;
 @Mapper
 public interface UserDetailsMapper {
     public int insertUserDetails(ToBeWriterBody body);
+
+    public UserDetailsDo selectByUserId(Long userId);
 }

@@ -9,4 +9,12 @@
             #{chineseId},#{userSex},#{userAge}
        )
    </insert>
+
+    <sql id="selectById">
+        user_id,user_phone,user_adress,chinese_id,user_sex,user_age
+    </sql>
+    <select id="selectByUserId" parameterType="java.lang.Long" resultType="com.lgl.qidian.entity.UserDetailsDo">
+        select <include refid="selectById"></include> from user_details
+        where user_id = #{userId}
+    </select>
 </mapper>

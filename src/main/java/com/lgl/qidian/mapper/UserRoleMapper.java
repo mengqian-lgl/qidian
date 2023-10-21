@@ -13,4 +13,6 @@ public interface UserRoleMapper {
     public int insertUserRole(User_Role user_role);
 
     public List<User_Role> selectRoleByUserId(Long userId);
+
+    public List<User_Role> selectRoleByUserIdUpdate(Long userId);
 }

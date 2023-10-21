@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lgl.qidian.mapper.UserIdMessageMapper">
+    <update id="createTableByUserId" parameterType="java.lang.String">
+        create table CONCAT(#{userId},'_message')(
+            message_id int primary key,
+            message_title char(256) not null,
+            message_text text not null,
+            message_createtime date not null,
+            index message (message_id,message_title)
+        )
+    </update>
+
+    <insert id="insert" parameterType="com.lgl.qidian.entity.UserIdMessageDo">
+        insert into CONCAT(${userId},'_message') values(
+            #{message_id},#{message_title},#{message_text},#{message_createtime}
+        )
+    </insert>
+</mapper>

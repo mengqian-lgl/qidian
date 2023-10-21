@@ -13,4 +13,8 @@
     <select id="selectRoleByUserId" resultType="com.lgl.qidian.entity.web_security.User_Role" parameterType="java.lang.Long">
         select user_id, role_id from user_role where user_id = #{userId}
     </select>
+
+    <select id="selectRoleByUserIdUpdate" resultType="com.lgl.qidian.entity.web_security.User_Role" parameterType="java.lang.Long">
+        select user_id, role_id from user_role where user_id = #{userId} for update
+    </select>
 </mapper>

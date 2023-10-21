@@ -49,13 +49,13 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
 
-        //关闭csrf攻击防御
+//        关闭csrf防御
         http.csrf().disable();
         //允许跨域
         http.cors().disable();
 
         http.authorizeRequests()
-                .antMatchers("/register", "/login","/sliderverify","/123/{name}").permitAll()
+                .antMatchers("/register", "/login","/sliderverify","/123/{name}","/chat/{key}","/test").permitAll()
                 .anyRequest().authenticated();
 
         //不使用session
