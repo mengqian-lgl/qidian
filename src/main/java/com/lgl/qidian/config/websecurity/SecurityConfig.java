@@ -55,7 +55,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         http.cors().disable();
 
         http.authorizeRequests()
-                .antMatchers("/register", "/login","/sliderverify","/123/{name}","/chat/{key}","/test").permitAll()
+                .antMatchers("/register", "/login","/sliderverify","/123/{name}","/chat/{key}","/test","/test/perall").permitAll()
                 .anyRequest().authenticated();
 
         //不使用session

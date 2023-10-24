@@ -26,6 +26,9 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.lang.Nullable;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.AuthorityUtils;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.test.context.junit4.SpringRunner;
@@ -313,8 +316,15 @@ public class QidianApplicationTests {
         ch.qos.logback.classic.Logger logger = (ch.qos.logback.classic.Logger)LoggerFactory.getLogger("test");
         System.out.println(logger.getEffectiveLevel());
         logger.info("这是一次测试");
-        System.out.println(passwordEncoder.encode("1539450894"));
+        System.out.println(passwordEncoder.encode("153945089"));
+    }
 
+    @Test
+    public void main(){
+        List<GrantedAuthority> list = AuthorityUtils.commaSeparatedStringToAuthorityList("user:add,ROLE_admin");
+        list.stream().forEach(grantedAuthority -> {
+            System.out.println(grantedAuthority);
+        });
 
     }
 }

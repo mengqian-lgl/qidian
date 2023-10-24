@@ -2,6 +2,7 @@ package com.lgl.qidian;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
+import com.alibaba.fastjson.annotation.JSONField;
 import com.auth0.jwt.interfaces.DecodedJWT;
 import com.lgl.qidian.util.JwtUtils;
 import io.lettuce.core.ScriptOutputType;
@@ -15,6 +16,7 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.sql.Timestamp;
@@ -207,5 +209,101 @@ public class TestNoFollowSpring {
         System.out.println(format);
     }
 
+    @Test
+    public void testJson(){
+//        user user1 = new user();
+//        user1.name = "test";
+//        test test1 = new test("lgl","pass",user1);
+//        Object s = JSON.toJSON(test1);
+//        System.out.println(s);
+//        test test = JSON.toJavaObject((JSON) s, test.class);
+//        System.out.println(test);
+        user user = new user();
+        user.date = new Date();
+        String s = JSON.toJSONString(user);
+        System.out.println(s);
 
+    }
+
+    public class test{
+
+        @JSONField(ordinal = 2, name = "testname")
+        String name;
+
+        @JSONField(ordinal = 1)
+        String pass;
+
+        @JSONField()
+        user user1;
+
+        public test(String name, String pass, user user1) {
+            this.name = name;
+            this.pass = pass;
+            this.user1 = user1;
+        }
+
+        public String getName() {
+            return name;
+        }
+
+        public void setName(String name) {
+            this.name = name;
+        }
+
+        public String getPass() {
+            return pass;
+        }
+
+        public void setPass(String pass) {
+            this.pass = pass;
+        }
+
+        public user getUser1() {
+            return user1;
+        }
+
+        public void setUser1(user user1) {
+            this.user1 = user1;
+        }
+
+        @Override
+        public String toString() {
+            return "test{" +
+                    "name='" + name + '\'' +
+                    ", pass='" + pass + '\'' +
+                    ", user1=" + user1 +
+                    '}';
+        }
+    }
+
+    public class user{
+
+        @JSONField(format = "yyyy-MM-dd")
+        Date date;
+
+        public Date getDate() {
+            return date;
+        }
+
+        public void setDate(Date date) {
+            this.date = date;
+        }
+
+        String name;
+
+        public String getName() {
+            return name;
+        }
+
+        public void setName(String name) {
+            this.name = name;
+        }
+
+        @Override
+        public String toString() {
+            return "user{" +
+                    "name='" + name + '\'' +
+                    '}';
+        }
+    }
 }

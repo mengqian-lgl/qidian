@@ -1,0 +1,120 @@
+2023-10-22 21:48:31 INFO  main com.lgl.qidian.QidianApplication Starting QidianApplication using Java 11.0.18 on lgl with PID 9328 (D:\ideaWork\qidian\target\classes started by ASUS in D:\ideaWork\qidian) 
+2023-10-22 21:48:31 INFO  main com.lgl.qidian.QidianApplication No active profile set, falling back to 1 default profile: "default" 
+2023-10-22 21:48:31 INFO  background-preinit org.hibernate.validator.internal.util.Version HV000001: Hibernate Validator 6.2.5.Final 
+2023-10-22 21:48:32 INFO  main o.s.d.r.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode 
+2023-10-22 21:48:32 INFO  main o.s.d.r.config.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode. 
+2023-10-22 21:48:32 INFO  main o.s.d.r.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces. 
+2023-10-22 21:48:33 INFO  main o.s.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8080 (http) 
+2023-10-22 21:48:33 INFO  main org.apache.catalina.core.AprLifecycleListener Loaded Apache Tomcat Native library [1.2.36] using APR version [1.7.2]. 
+2023-10-22 21:48:33 INFO  main org.apache.catalina.core.AprLifecycleListener APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true]. 
+2023-10-22 21:48:33 INFO  main org.apache.catalina.core.AprLifecycleListener APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true] 
+2023-10-22 21:48:33 INFO  main org.apache.catalina.core.AprLifecycleListener OpenSSL successfully initialized [OpenSSL 1.1.1t  7 Feb 2023] 
+2023-10-22 21:48:33 INFO  main org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8080"] 
+2023-10-22 21:48:33 INFO  main org.apache.catalina.core.StandardService Starting service [Tomcat] 
+2023-10-22 21:48:33 INFO  main org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.76] 
+2023-10-22 21:48:33 INFO  main o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext 
+2023-10-22 21:48:33 INFO  main o.s.b.w.s.c.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 2034 ms 
+2023-10-22 21:48:34 INFO  main o.s.security.web.DefaultSecurityFilterChain Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5b74902c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4e4bfd9c, org.springframework.security.web.context.SecurityContextPersistenceFilter@36330be8, com.lgl.qidian.filter.security.TokenFilter@66020d69, org.springframework.security.web.header.HeaderWriterFilter@2e19b30, org.springframework.security.web.authentication.logout.LogoutFilter@5a06eeef, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@41f23499, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@43090195, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@43ee1cf7, org.springframework.security.web.session.SessionManagementFilter@4888d1ea, org.springframework.security.web.access.ExceptionTranslationFilter@2052f095, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@19e8fe55] 
+2023-10-22 21:48:34 INFO  main org.apache.coyote.http11.Http11NioProtocol Starting ProtocolHandler ["http-nio-8080"] 
+2023-10-22 21:48:35 INFO  main o.s.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8080 (http) with context path '' 
+2023-10-22 21:48:35 INFO  main com.lgl.qidian.QidianApplication Started QidianApplication in 4.369 seconds (JVM running for 6.369) 
+2023-10-22 21:48:37 INFO  http-nio-8080-exec-1 o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2023-10-22 21:48:37 INFO  http-nio-8080-exec-1 org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet' 
+2023-10-22 21:48:37 INFO  http-nio-8080-exec-1 org.springframework.web.servlet.DispatcherServlet Completed initialization in 2 ms 
+2023-10-22 21:48:37 INFO  http-nio-8080-exec-1 com.zaxxer.hikari.HikariDataSource HikariPool-1 - Starting... 
+2023-10-22 21:48:37 INFO  http-nio-8080-exec-1 com.zaxxer.hikari.HikariDataSource HikariPool-1 - Start completed. 
+2023-10-22 22:19:40 INFO  main com.lgl.qidian.QidianApplication Starting QidianApplication using Java 11.0.18 on lgl with PID 8636 (D:\ideaWork\qidian\target\classes started by ASUS in D:\ideaWork\qidian) 
+2023-10-22 22:19:40 INFO  background-preinit org.hibernate.validator.internal.util.Version HV000001: Hibernate Validator 6.2.5.Final 
+2023-10-22 22:19:40 INFO  main com.lgl.qidian.QidianApplication No active profile set, falling back to 1 default profile: "default" 
+2023-10-22 22:19:41 INFO  main o.s.d.r.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode 
+2023-10-22 22:19:41 INFO  main o.s.d.r.config.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode. 
+2023-10-22 22:19:41 INFO  main o.s.d.r.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 21 ms. Found 0 Redis repository interfaces. 
+2023-10-22 22:19:41 INFO  main o.s.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8080 (http) 
+2023-10-22 22:19:41 INFO  main org.apache.catalina.core.AprLifecycleListener Loaded Apache Tomcat Native library [1.2.36] using APR version [1.7.2]. 
+2023-10-22 22:19:41 INFO  main org.apache.catalina.core.AprLifecycleListener APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true]. 
+2023-10-22 22:19:41 INFO  main org.apache.catalina.core.AprLifecycleListener APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true] 
+2023-10-22 22:19:41 INFO  main org.apache.catalina.core.AprLifecycleListener OpenSSL successfully initialized [OpenSSL 1.1.1t  7 Feb 2023] 
+2023-10-22 22:19:41 INFO  main org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8080"] 
+2023-10-22 22:19:41 INFO  main org.apache.catalina.core.StandardService Starting service [Tomcat] 
+2023-10-22 22:19:41 INFO  main org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.76] 
+2023-10-22 22:19:41 INFO  main o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext 
+2023-10-22 22:19:41 INFO  main o.s.b.w.s.c.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1516 ms 
+2023-10-22 22:19:43 INFO  main o.s.security.web.DefaultSecurityFilterChain Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5e62ca19, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@188bf4d8, org.springframework.security.web.context.SecurityContextPersistenceFilter@3d8bd881, com.lgl.qidian.filter.security.TokenFilter@6c8f4bc7, org.springframework.security.web.header.HeaderWriterFilter@6071631f, org.springframework.security.web.authentication.logout.LogoutFilter@3fd9e01c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@23358740, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4d0abb23, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7dd7ec56, org.springframework.security.web.session.SessionManagementFilter@103bcc9f, org.springframework.security.web.access.ExceptionTranslationFilter@6edb1e9c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@538905d2] 
+2023-10-22 22:19:43 INFO  main org.apache.coyote.http11.Http11NioProtocol Starting ProtocolHandler ["http-nio-8080"] 
+2023-10-22 22:19:43 INFO  main o.s.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8080 (http) with context path '' 
+2023-10-22 22:19:43 INFO  main com.lgl.qidian.QidianApplication Started QidianApplication in 3.328 seconds (JVM running for 5.447) 
+2023-10-22 22:19:44 INFO  http-nio-8080-exec-1 o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2023-10-22 22:19:44 INFO  http-nio-8080-exec-1 org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet' 
+2023-10-22 22:19:44 INFO  http-nio-8080-exec-1 org.springframework.web.servlet.DispatcherServlet Completed initialization in 1 ms 
+2023-10-22 22:41:47 INFO  main com.lgl.qidian.QidianApplication Starting QidianApplication using Java 11.0.18 on lgl with PID 9300 (D:\ideaWork\qidian\target\classes started by ASUS in D:\ideaWork\qidian) 
+2023-10-22 22:41:47 INFO  main com.lgl.qidian.QidianApplication No active profile set, falling back to 1 default profile: "default" 
+2023-10-22 22:41:47 INFO  background-preinit org.hibernate.validator.internal.util.Version HV000001: Hibernate Validator 6.2.5.Final 
+2023-10-22 22:41:48 INFO  main o.s.d.r.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode 
+2023-10-22 22:41:48 INFO  main o.s.d.r.config.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode. 
+2023-10-22 22:41:48 INFO  main o.s.d.r.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces. 
+2023-10-22 22:41:48 INFO  main o.s.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8080 (http) 
+2023-10-22 22:41:48 INFO  main org.apache.catalina.core.AprLifecycleListener Loaded Apache Tomcat Native library [1.2.36] using APR version [1.7.2]. 
+2023-10-22 22:41:48 INFO  main org.apache.catalina.core.AprLifecycleListener APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true]. 
+2023-10-22 22:41:48 INFO  main org.apache.catalina.core.AprLifecycleListener APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true] 
+2023-10-22 22:41:48 INFO  main org.apache.catalina.core.AprLifecycleListener OpenSSL successfully initialized [OpenSSL 1.1.1t  7 Feb 2023] 
+2023-10-22 22:41:48 INFO  main org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8080"] 
+2023-10-22 22:41:48 INFO  main org.apache.catalina.core.StandardService Starting service [Tomcat] 
+2023-10-22 22:41:48 INFO  main org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.76] 
+2023-10-22 22:41:48 INFO  main o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext 
+2023-10-22 22:41:48 INFO  main o.s.b.w.s.c.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1219 ms 
+2023-10-22 22:41:50 INFO  main o.s.security.web.DefaultSecurityFilterChain Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1f19d423, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@73958426, org.springframework.security.web.context.SecurityContextPersistenceFilter@99223ac, com.lgl.qidian.filter.security.TokenFilter@1216eb3f, org.springframework.security.web.header.HeaderWriterFilter@2125535d, org.springframework.security.web.authentication.logout.LogoutFilter@4e20a985, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@77a85e76, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@69ab2d6a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@23933031, org.springframework.security.web.session.SessionManagementFilter@4bf10fe1, org.springframework.security.web.access.ExceptionTranslationFilter@729d6ee2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4888d1ea] 
+2023-10-22 22:41:50 INFO  main org.apache.coyote.http11.Http11NioProtocol Starting ProtocolHandler ["http-nio-8080"] 
+2023-10-22 22:41:50 INFO  main o.s.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8080 (http) with context path '' 
+2023-10-22 22:41:50 INFO  main com.lgl.qidian.QidianApplication Started QidianApplication in 3.342 seconds (JVM running for 4.707) 
+2023-10-22 22:41:51 INFO  http-nio-8080-exec-1 o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2023-10-22 22:41:51 INFO  http-nio-8080-exec-1 org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet' 
+2023-10-22 22:41:51 INFO  http-nio-8080-exec-1 org.springframework.web.servlet.DispatcherServlet Completed initialization in 0 ms 
+2023-10-22 22:43:37 INFO  main com.lgl.qidian.QidianApplication Starting QidianApplication using Java 11.0.18 on lgl with PID 11712 (D:\ideaWork\qidian\target\classes started by ASUS in D:\ideaWork\qidian) 
+2023-10-22 22:43:37 INFO  main com.lgl.qidian.QidianApplication No active profile set, falling back to 1 default profile: "default" 
+2023-10-22 22:43:37 INFO  background-preinit org.hibernate.validator.internal.util.Version HV000001: Hibernate Validator 6.2.5.Final 
+2023-10-22 22:43:38 INFO  main o.s.d.r.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode 
+2023-10-22 22:43:38 INFO  main o.s.d.r.config.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode. 
+2023-10-22 22:43:38 INFO  main o.s.d.r.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces. 
+2023-10-22 22:43:38 INFO  main o.s.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8080 (http) 
+2023-10-22 22:43:38 INFO  main org.apache.catalina.core.AprLifecycleListener Loaded Apache Tomcat Native library [1.2.36] using APR version [1.7.2]. 
+2023-10-22 22:43:38 INFO  main org.apache.catalina.core.AprLifecycleListener APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true]. 
+2023-10-22 22:43:38 INFO  main org.apache.catalina.core.AprLifecycleListener APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true] 
+2023-10-22 22:43:38 INFO  main org.apache.catalina.core.AprLifecycleListener OpenSSL successfully initialized [OpenSSL 1.1.1t  7 Feb 2023] 
+2023-10-22 22:43:38 INFO  main org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8080"] 
+2023-10-22 22:43:38 INFO  main org.apache.catalina.core.StandardService Starting service [Tomcat] 
+2023-10-22 22:43:38 INFO  main org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.76] 
+2023-10-22 22:43:38 INFO  main o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext 
+2023-10-22 22:43:38 INFO  main o.s.b.w.s.c.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1219 ms 
+2023-10-22 22:43:40 INFO  main o.s.security.web.DefaultSecurityFilterChain Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1f19d423, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@73958426, org.springframework.security.web.context.SecurityContextPersistenceFilter@99223ac, com.lgl.qidian.filter.security.TokenFilter@5514579e, org.springframework.security.web.header.HeaderWriterFilter@2125535d, org.springframework.security.web.authentication.logout.LogoutFilter@4e20a985, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@77a85e76, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@69ab2d6a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@23933031, org.springframework.security.web.session.SessionManagementFilter@4bf10fe1, org.springframework.security.web.access.ExceptionTranslationFilter@729d6ee2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4888d1ea] 
+2023-10-22 22:43:40 INFO  main org.apache.coyote.http11.Http11NioProtocol Starting ProtocolHandler ["http-nio-8080"] 
+2023-10-22 22:43:40 INFO  main o.s.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8080 (http) with context path '' 
+2023-10-22 22:43:40 INFO  main com.lgl.qidian.QidianApplication Started QidianApplication in 3.146 seconds (JVM running for 4.643) 
+2023-10-22 22:43:40 INFO  http-nio-8080-exec-1 o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2023-10-22 22:43:40 INFO  http-nio-8080-exec-1 org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet' 
+2023-10-22 22:43:40 INFO  http-nio-8080-exec-1 org.springframework.web.servlet.DispatcherServlet Completed initialization in 1 ms 
+2023-10-22 22:50:11 INFO  main com.lgl.qidian.QidianApplication Starting QidianApplication using Java 11.0.18 on lgl with PID 6336 (D:\ideaWork\qidian\target\classes started by ASUS in D:\ideaWork\qidian) 
+2023-10-22 22:50:11 INFO  main com.lgl.qidian.QidianApplication No active profile set, falling back to 1 default profile: "default" 
+2023-10-22 22:50:11 INFO  background-preinit org.hibernate.validator.internal.util.Version HV000001: Hibernate Validator 6.2.5.Final 
+2023-10-22 22:50:12 INFO  main o.s.d.r.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode 
+2023-10-22 22:50:12 INFO  main o.s.d.r.config.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode. 
+2023-10-22 22:50:12 INFO  main o.s.d.r.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces. 
+2023-10-22 22:50:13 INFO  main o.s.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8080 (http) 
+2023-10-22 22:50:13 INFO  main org.apache.catalina.core.AprLifecycleListener Loaded Apache Tomcat Native library [1.2.36] using APR version [1.7.2]. 
+2023-10-22 22:50:13 INFO  main org.apache.catalina.core.AprLifecycleListener APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true]. 
+2023-10-22 22:50:13 INFO  main org.apache.catalina.core.AprLifecycleListener APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true] 
+2023-10-22 22:50:13 INFO  main org.apache.catalina.core.AprLifecycleListener OpenSSL successfully initialized [OpenSSL 1.1.1t  7 Feb 2023] 
+2023-10-22 22:50:13 INFO  main org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8080"] 
+2023-10-22 22:50:13 INFO  main org.apache.catalina.core.StandardService Starting service [Tomcat] 
+2023-10-22 22:50:13 INFO  main org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.76] 
+2023-10-22 22:50:13 INFO  main o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext 
+2023-10-22 22:50:13 INFO  main o.s.b.w.s.c.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1454 ms 
+2023-10-22 22:50:14 INFO  main o.s.security.web.DefaultSecurityFilterChain Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@68360fb9, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1c787389, org.springframework.security.web.context.SecurityContextPersistenceFilter@57afe44b, com.lgl.qidian.filter.security.TokenFilter@5514579e, org.springframework.security.web.header.HeaderWriterFilter@45cb5307, org.springframework.security.web.authentication.logout.LogoutFilter@776e7dfb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@28f8ce2e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6f80cf5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@67b3960b, org.springframework.security.web.session.SessionManagementFilter@10dbf660, org.springframework.security.web.access.ExceptionTranslationFilter@633a11eb, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@23933031] 
+2023-10-22 22:50:14 INFO  main org.apache.coyote.http11.Http11NioProtocol Starting ProtocolHandler ["http-nio-8080"] 
+2023-10-22 22:50:14 INFO  main o.s.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8080 (http) with context path '' 
+2023-10-22 22:50:14 INFO  main com.lgl.qidian.QidianApplication Started QidianApplication in 3.576 seconds (JVM running for 5.099) 
+2023-10-22 22:50:16 INFO  http-nio-8080-exec-1 o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2023-10-22 22:50:16 INFO  http-nio-8080-exec-1 org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet' 
+2023-10-22 22:50:16 INFO  http-nio-8080-exec-1 org.springframework.web.servlet.DispatcherServlet Completed initialization in 1 ms 
+2023-10-22 23:59:54 INFO  main com.lgl.qidian.QidianApplication Starting QidianApplication using Java 11.0.18 on lgl with PID 13356 (D:\ideaWork\qidian\target\classes started by ASUS in D:\ideaWork\qidian) 
+2023-10-22 23:59:54 INFO  main com.lgl.qidian.QidianApplication No active profile set, falling back to 1 default profile: "default" 
+2023-10-22 23:59:54 INFO  background-preinit org.hibernate.validator.internal.util.Version HV000001: Hibernate Validator 6.2.5.Final 
